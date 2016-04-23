@@ -1,0 +1,94 @@
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  font-family: 'Quicksand', sans-serif;
+  color: #fff;
+  background: linear-gradient(#031426, #292331);
+  background-size: contain;
+}
+
+h1 {
+  margin: 0;
+  padding: 2em 0 1em;
+  font-family: 'Press Start 2P', cursive;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  color: #00c4fe;
+}
+
+h1 span {
+  display: block;
+  font-size: .8em;
+  font-weight: 400;
+  letter-spacing: .7em;
+  color: #fff;
+}
+
+.preload {
+  position: relative;
+  font-family: 'Press Start 2P', cursive;
+  color: #00c4fe;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  margin: 0;
+  padding: .5em 1em;
+  font-family: 'Press Start 2P', cursive;
+  text-transform: uppercase;
+  color: #00c4fe;
+  background-color: transparent;
+  outline: 0;
+  border: 2px solid #00c4fe;
+  border-radius: 1em;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+canvas {
+  display: block;
+  margin: 0 auto;
+  background-color:black;
+  background-image:
+    radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+    radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+    radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+    radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+}
+
+.instructions,
+footer {
+  width: 19em;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+kbd {
+  padding: .1em .5em;
+  font-family: monospace;
+  border: 1px solid #fff;
+  border-radius: .3em;
+}
+
+footer {
+  text-align: center;
+}
+
+a {
+  color: #00c4fe;
+}
+
+p {
+  margin: 0;
+}

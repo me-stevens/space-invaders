@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Space invaders</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1><span>Space</span> Invaders</h1>
+
+  <div class="preload">
+    <audio id="background-sound" src="sounds/background.mp3"></audio>
+    <audio id="fastinvader-sound" src="sounds/fastinvader.mp3"></audio>
+    <audio id="bang-sound" src="sounds/bang.mp3"></audio>
+    <audio id="shoot-sound" src="sounds/shoot.mp3"></audio>
+    <audio id="explosion-sound" src="sounds/explosion.mp3"></audio>
+    <audio id="playerwins-sound" src="sounds/playerwins.mp3"></audio>
+
+    <img id="player-image" src="images/player.gif" width="0" height="0">
+    <img id="invader-image" src="images/invader1.png" width="0" height="0">
+    <img id="heart-image" src="images/heart.png" width="0" height="0">
+
+    <canvas id="screen" width="310" height="310">
+      Your browser does not support canvas.
+    </canvas>
+
+    <button id="playgame">Play Game</button>
+    <button id="gameover" class="hidden">Game Over</button>
+    <button id="playerwins" class="hidden">You won</button>
+  </div>
+
+  <div class="instructions">
+    Press <kbd>←</kbd> and <kbd>→</kbd> arrow keys to move the shooter. Press <kbd>SPACEBAR</kbd> to shoot. Press the button to play again.
+  </div>
+
+  <footer>
+    <p>Music by <a href="https://icons8.com/music/author/el-kirpitch">Le Brick</a></p>
+    <p>Assets by <a href="http://www.classicgaming.cc/classics/space-invaders">Classic gaming</a></p>
+  </footer>
+
+  <script src="src/bullet.js"></script>
+  <script src="src/player.js"></script>
+  <script src="src/invader.js"></script>
+  <script src="src/geometry.js"></script>
+  <script src="src/sound.js"></script>
+  <script src="src/stats.js"></script>
+  <script src="src/game.js"></script>
+  <script src="src/userinterface.js"></script>
+  <script src="src/main.js"></script>
+</body>
+</html>
